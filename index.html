@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VisualVerse Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050505;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 18px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(12px);
+}
+
+header h1 {
+  color: #ffd700;
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+  background: radial-gradient(circle at top, #111, #000);
+}
+
+.hero h2 {
+  font-size: 52px;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border: none;
+  background: #ffd700;
+  color: black;
+  font-size: 16px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background: white;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 10%;
+}
+
+.section-title {
+  font-size: 40px;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: #111;
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,215,0,0.2);
+}
+
+/* PORTFOLIO */
+.portfolio-item {
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255,215,0,0.2);
+}
+
+.portfolio-item iframe,
+.portfolio-item img {
+  width: 100%;
+  height: 220px;
+  display: block;
+}
+
+.portfolio-item p {
+  padding: 12px;
+  color: #ccc;
+}
+
+/* PDF SECTION */
+.pdf-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.pdf-card {
+  min-width: 320px;
+  height: 420px;
+  background: #111;
+  border-radius: 15px;
+  border: 1px solid rgba(255,215,0,0.2);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pdf-card iframe {
+  width: 100%;
+  height: 360px;
+  border: none;
+}
+
+.pdf-title {
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* CONTACT */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 14px;
+  background: #ffd700;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: white;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: black;
+  color: #777;
+  border-top: 1px solid #222;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <img src="https://drive.google.com/thumbnail?id=15Mh4lLdhZyD1mpCbfCmhXl7rNqUyBiW5&sz=w1000"
+    style="width:48px;height:48px;border-radius:50%;" />
+    <div>
+      <h1>VisualVerse Agency</h1>
+      <p style="font-size:11px;color:#aaa;">AI • DESIGN • UGC</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="https://drive.google.com/thumbnail?id=15Mh4lLdhZyD1mpCbfCmhXl7rNqUyBiW5&sz=w1000"
+  style="width:110px;height:110px;border-radius:50%;margin-bottom:15px;" />
+
+  <h2>Cinematic AI Videos & Modern Visual Design</h2>
+  <p>UGC Content • AI Videos • Branding • Social Media Creatives</p>
+  <a class="btn" href="#contact">Hire Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-container">
+
+    <div class="about-card">
+
+      <div class="about-glow"></div>
+
+      <h3 class="about-name">
+        Shazia Naz
+      </h3>
+
+      <p class="about-role">
+        Founder • VisualVerse Agency
+      </p>
+
+      <p class="about-text">
+        I’m a creative digital creator specializing in high-converting UGC videos,
+        AI-generated visuals, cinematic editing, branding, Canva designs,
+        creative storytelling, and social media content creation.
+      </p>
+
+      <p class="about-text">
+        I also provide professional creative writing, poetry writing,
+        content research, trend analysis, script development, and brand strategy
+        services to help businesses and creators build impactful digital identities.
+      </p>
+
+      <p class="about-text">
+        My mission is to help brands stand out with modern visuals,
+        emotional storytelling, aesthetic content, and engaging digital experiences
+        that connect with audiences across social platforms.
+      </p>
+
+      <div class="about-tags">
+
+        <span>UGC Creator</span>
+        <span>AI Video Artist</span>
+        <span>Creative Writer</span>
+        <span>Research Specialist</span>
+        <span>Poetry Writer</span>
+        <span>Brand Designer</span>
+        <span>Content Strategist</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+
+#about{
+  padding:100px 8%;
+  position:relative;
+  overflow:hidden;
+}
+
+.about-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.about-card{
+  position:relative;
+  max-width:900px;
+  padding:50px;
+  border-radius:30px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  overflow:hidden;
+  transition:0.4s ease;
+}
+
+.about-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 60px rgba(138,92,246,0.25);
+}
+
+.about-glow{
+  position:absolute;
+  width:250px;
+  height:250px;
+  background:#8b5cf6;
+  filter:blur(120px);
+  opacity:0.18;
+  top:-80px;
+  right:-80px;
+}
+
+.about-name{
+  font-size:42px;
+  color:white;
+  margin-bottom:10px;
+  position:relative;
+  z-index:2;
+}
+
+.about-role{
+  color:#b388ff;
+  font-size:18px;
+  margin-bottom:25px;
+  font-weight:600;
+  position:relative;
+  z-index:2;
+}
+
+.about-text{
+  color:#d5d5d5;
+  font-size:16px;
+  line-height:1.9;
+  margin-bottom:20px;
+  position:relative;
+  z-index:2;
+}
+
+.about-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+  position:relative;
+  z-index:2;
+}
+
+.about-tags span{
+  padding:10px 18px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:30px;
+  color:white;
+  font-size:14px;
+  transition:0.3s ease;
+}
+
+.about-tags span:hover{
+  background:#8b5cf6;
+  transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+  .about-card{
+    padding:35px 25px;
+  }
+
+  .about-name{
+    font-size:32px;
+  }
+
+}
+
+</style>
+
+
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="section-title">Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="service-icon">🎥</div>
+      <h3>UGC Videos</h3>
+      <p>High-converting user-generated content for brands & campaigns.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">🤖</div>
+      <h3>AI Video Creation</h3>
+      <p>Cinematic AI storytelling, reels, ads, and visual concepts.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">🎨</div>
+      <h3>Canva Designs</h3>
+      <p>Creative social posts, presentations, branding kits & templates.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">🧠</div>
+      <h3>Brand Identity</h3>
+      <p>Modern logos, color systems, typography & visual branding.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">✍️</div>
+      <h3>Creative Writing</h3>
+      <p>Scripts, storytelling, captions, article writing & creative concepts.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">🖋️</div>
+      <h3>Poetry Services</h3>
+      <p>Emotional poetry, spoken word pieces & aesthetic written content.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">🖼️</div>
+      <h3>Logo Design</h3>
+      <p>Professional custom logos with modern and premium aesthetics.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">📸</div>
+      <h3>Thumbnail Design</h3>
+      <p>Eye-catching YouTube & social media thumbnails that boost clicks.</p>
+    </div>
+
+    <div class="card">
+      <div class="service-icon">📊</div>
+      <h3>Research Services</h3>
+      <p>Creative research, trend analysis, audience insights & content planning.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+#services {
+  padding: 100px 8%;
+  background: #0f0f0f;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 35px 25px;
+  border-radius: 22px;
+  transition: 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #8b5cf6;
+  box-shadow: 0 15px 40px rgba(139,92,246,0.25);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-size: 15px;
+}
+</style>
+
+
+
+
+<!-- ========================= -->
+<!-- PORTFOLIO SECTION -->
+<!-- ========================= -->
+
+<section id="portfolio">
+
+  <h2 class="section-title">Portfolio</h2>
+
+  <!-- ========================= -->
+  <!-- AI DOCUMENTARY PROJECTS -->
+  <!-- ========================= -->
+
+  <h2 class="section-title" style="font-size:30px; margin-top:20px;">
+    AI Documentary Client Projects
+  </h2>
+
+  <div class="grid">
+
+    <!-- VIDEO 1 -->
+    <div class="portfolio-item">
+
+      <iframe
+        src="https://drive.google.com/file/d/1xOWi_CZJ2luEVCU7Np8JqXA5c_-SU3Mr/preview"
+        allowfullscreen
+        style="width:100%; height:230px; border:none;">
+      </iframe>
+
+      <p>
+        AI Documentary Client Project
+      </p>
+
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="portfolio-item">
+
+      <iframe
+        src="https://drive.google.com/file/d/1NLWqV7fKN4449-NmM6KVp0DZhxmbljnR/preview"
+        allowfullscreen
+        style="width:100%; height:230px; border:none;">
+      </iframe>
+
+      <p>
+        AI Cinematic Documentary Client Project
+      </p>
+
+    </div>
+
+  </div>
+
+<!-- ========================= -->
+<!-- AI TUTORIAL SECTION -->
+<!-- ========================= -->
+
+<h2 class="section-title" style="font-size:30px; margin-top:90px;">
+  AI Tutorial Videos
+</h2>
+
+<div class="grid">
+
+  <!-- VIDEO 1 -->
+  <div class="portfolio-item">
+
+    <a href="https://youtu.be/gpmIVAWNk80?si=s78EBjSJezxN82fD"
+       target="_blank"
+       style="text-decoration:none; color:white;">
+
+      <img
+        src="https://img.youtube.com/vi/gpmIVAWNk80/maxresdefault.jpg"
+        alt="AI Tutorial"
+        style="width:100%; height:230px; object-fit:cover;"
+      />
+
+      <div style="padding:15px;">
+
+        <h3 style="color:#ffd700; margin-bottom:10px;">
+          AI Tutorial — Text To Speech
+        </h3>
+
+        <p style="color:#ccc; font-size:14px; line-height:1.6;">
+          Learn cinematic AI editing, storytelling, text-to-speech workflow,
+          visual effects, and professional editing techniques.
+        </p>
+
+        <div style="
+          margin-top:15px;
+          display:inline-block;
+          background:#ff0000;
+          color:white;
+          padding:10px 18px;
+          border-radius:30px;
+          font-size:14px;
+          font-weight:600;
+        ">
+          ▶ Watch on YouTube
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+  <!-- VIDEO 2 -->
+  <div class="portfolio-item">
+
+    <a href="https://youtu.be/EUbPEv_Mgug?si=Z8Ev51qWrmSozTC5"
+       target="_blank"
+       style="text-decoration:none; color:white;">
+
+      <img
+        src="https://img.youtube.com/vi/EUbPEv_Mgug/maxresdefault.jpg"
+        alt="AI Tutorial"
+        style="width:100%; height:230px; object-fit:cover;"
+      />
+
+      <div style="padding:15px;">
+
+        <h3 style="color:#ffd700; margin-bottom:10px;">
+          AI Tutorial — AI Content Creation
+        </h3>
+
+        <p style="color:#ccc; font-size:14px; line-height:1.6;">
+          Discover AI-powered editing workflows, automation tools,
+          creative storytelling, and advanced content creation techniques.
+        </p>
+
+        <div style="
+          margin-top:15px;
+          display:inline-block;
+          background:#ff0000;
+          color:white;
+          padding:10px 18px;
+          border-radius:30px;
+          font-size:14px;
+          font-weight:600;
+        ">
+          ▶ Watch on YouTube
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+  <!-- VIDEO 3 -->
+  <div class="portfolio-item">
+
+    <a href="https://youtu.be/JyWOXoma88E?si=_PggbSNhLxzu9cD5"
+       target="_blank"
+       style="text-decoration:none; color:white;">
+
+      <img
+        src="https://img.youtube.com/vi/JyWOXoma88E/maxresdefault.jpg"
+        alt="AI Tutorial"
+        style="width:100%; height:230px; object-fit:cover;"
+      />
+
+      <div style="padding:15px;">
+
+        <h3 style="color:#ffd700; margin-bottom:10px;">
+          AI Tutorial — Professional Editing
+        </h3>
+
+        <p style="color:#ccc; font-size:14px; line-height:1.6;">
+          Master cinematic visuals, AI editing tricks, smooth transitions,
+          sound design, and engaging professional video production.
+        </p>
+
+        <div style="
+          margin-top:15px;
+          display:inline-block;
+          background:#ff0000;
+          color:white;
+          padding:10px 18px;
+          border-radius:30px;
+          font-size:14px;
+          font-weight:600;
+        ">
+          ▶ Watch on YouTube
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- UGC CREATIVE REELS -->
+<!-- ========================= -->
+
+<h2 class="section-title" style="font-size:30px; margin-top:90px;">
+  UGC Creative Reels
+</h2>
+
+<div class="grid">
+
+  <!-- REEL 1 -->
+  <div class="portfolio-item">
+
+    <a href="https://www.instagram.com/reel/DTkV2bJDGoY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+       target="_blank"
+       style="text-decoration:none; color:white;">
+
+      <div style="
+        position:relative;
+        overflow:hidden;
+        border-radius:18px;
+      ">
+
+        <img
+          src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop"
+          alt="UGC Creative Reel"
+          style="width:100%; height:320px; object-fit:cover;"
+        />
+
+        <div style="
+          position:absolute;
+          inset:0;
+          background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+        "></div>
+
+        <div style="
+          position:absolute;
+          bottom:15px;
+          left:15px;
+          background:#e1306c;
+          color:white;
+          padding:10px 16px;
+          border-radius:30px;
+          font-size:14px;
+          font-weight:600;
+        ">
+          ▶ Watch Reel
+        </div>
+
+      </div>
+
+      <div style="padding:18px;">
+
+        <h3 style="color:#ff7ad9; margin-bottom:10px;">
+          UGC Creative Ad Reel
+        </h3>
+
+        <p style="color:#ccc; font-size:14px; line-height:1.6;">
+          Engaging short-form UGC content with cinematic visuals,
+          trendy editing, storytelling, and viral social media aesthetics.
+        </p>
+
+      </div>
+
+    </a>
+
+  </div>
+
+  <!-- REEL 2 -->
+  <div class="portfolio-item">
+
+    <a href="https://www.instagram.com/reel/DTkUSIPDPCR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+       target="_blank"
+       style="text-decoration:none; color:white;">
+
+      <div style="
+        position:relative;
+        overflow:hidden;
+        border-radius:18px;
+      ">
+
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+          alt="UGC Creative Reel"
+          style="width:100%; height:320px; object-fit:cover;"
+        />
+
+        <div style="
+          position:absolute;
+          inset:0;
+          background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+        "></div>
+
+        <div style="
+          position:absolute;
+          bottom:15px;
+          left:15px;
+          background:#e1306c;
+          color:white;
+          padding:10px 16px;
+          border-radius:30px;
+          font-size:14px;
+          font-weight:600;
+        ">
+          ▶ Watch Reel
+        </div>
+
+      </div>
+
+      <div style="padding:18px;">
+
+        <h3 style="color:#ff7ad9; margin-bottom:10px;">
+          Viral UGC Storytelling
+        </h3>
+
+        <p style="color:#ccc; font-size:14px; line-height:1.6;">
+          Modern creator-style editing with aesthetic visuals,
+          engaging hooks, product showcasing, and cinematic pacing.
+        </p>
+
+      </div>
+
+    </a>
+
+  </div>
+
+  <!-- REEL 3 -->
+  <div class="portfolio-item">
+
+    <a href="https://www.instagram.com/reel/DTcpOR8jGbF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+       target="_blank"
+       style="text-decoration:none; color:white;">
+
+      <div style="
+        position:relative;
+        overflow:hidden;
+        border-radius:18px;
+      ">
+
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+          alt="UGC Creative Reel"
+          style="width:100%; height:320px; object-fit:cover;"
+        />
+
+        <div style="
+          position:absolute;
+          inset:0;
+          background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+        "></div>
+
+        <div style="
+          position:absolute;
+          bottom:15px;
+          left:15px;
+          background:#e1306c;
+          color:white;
+          padding:10px 16px;
+          border-radius:30px;
+          font-size:14px;
+          font-weight:600;
+        ">
+          ▶ Watch Reel
+        </div>
+
+      </div>
+
+      <div style="padding:18px;">
+
+        <h3 style="color:#ff7ad9; margin-bottom:10px;">
+          Social Media UGC Creative
+        </h3>
+
+        <p style="color:#ccc; font-size:14px; line-height:1.6;">
+          Creative short-form content optimized for Instagram engagement,
+          brand reach, audience retention, and social conversions.
+        </p>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</div>
+
+
+
+
+  <!-- ========================= -->
+  <!-- AUTO SCROLL STYLES -->
+  <!-- ========================= -->
+
+  <style>
+
+    .auto-scroll-container{
+      overflow:hidden;
+      position:relative;
+      width:100%;
+      padding:10px 0;
+    }
+
+    .auto-scroll-track{
+      display:flex;
+      gap:25px;
+      width:max-content;
+      animation:scrollSlider 35s linear infinite;
+    }
+
+    .auto-scroll-track:hover{
+      animation-play-state:paused;
+    }
+
+    .scroll-card{
+      min-width:360px;
+      flex-shrink:0;
+    }
+
+    @keyframes scrollSlider{
+      from{
+        transform:translateX(0);
+      }
+
+      to{
+        transform:translateX(-50%);
+      }
+    }
+
+  </style>
+
+
+  <!-- ========================= -->
+  <!-- THUMBNAIL PROJECTS -->
+  <!-- ========================= -->
+
+  <h2 class="section-title" style="margin-top:90px;">
+    Thumbnail Projects
+  </h2>
+
+  <div class="auto-scroll-container">
+
+    <div class="auto-scroll-track">
+
+      <!-- THUMBNAIL 1 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1GDby3H3ngNuyS9aVco9Q1ZswJCL0LMbP&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Cinematic YouTube thumbnail design project.
+        </p>
+      </div>
+
+      <!-- THUMBNAIL 2 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1VJ1HKi5f-O_Bje6oDZ6k0WPwCqvRUKJD&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Creative high-engagement thumbnail artwork.
+        </p>
+      </div>
+
+      <!-- THUMBNAIL 3 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1_D9kBZWak2btt0PVkAJI3vjyilUTfWgE&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          AI-enhanced cinematic thumbnail project.
+        </p>
+      </div>
+
+      <!-- THUMBNAIL 4 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1tGSdLvCXXjxyBn3j4DwWMrajfToa1P82&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Documentary-style thumbnail composition.
+        </p>
+      </div>
+
+      <!-- THUMBNAIL 5 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1-woPHTkXxV-piMdjqbk6Cg2CqMOoBKaD&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Viral-style thumbnail optimized for clicks.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================= -->
+  <!-- LOGO PROJECTS -->
+  <!-- ========================= -->
+
+  <h2 class="section-title" style="margin-top:90px;">
+    Logo Design Projects
+  </h2>
+
+  <div class="auto-scroll-container">
+
+    <div class="auto-scroll-track">
+
+      <!-- LOGO 1 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1g4MwFHm37gU0orB06o-RY3ziGG45_mII&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Modern cinematic logo branding project.
+        </p>
+      </div>
+
+      <!-- LOGO 2 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=195nqaUSSvfRX27Z7fLxCU3nuXzOiJFnG&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Creative brand identity logo design.
+        </p>
+      </div>
+
+      <!-- LOGO 3 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1u30qGh--D15zv0k0Su0BFNwuvxUwuFu0&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Premium logo concept for modern businesses.
+        </p>
+      </div>
+
+      <!-- LOGO 4 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=16goMwzOYhTjx7Axr-aM76m1vP7OWLdly&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Minimal luxury branding logo project.
+        </p>
+      </div>
+
+      <!-- LOGO 5 -->
+      <div class="portfolio-item scroll-card">
+        <img src="https://drive.google.com/thumbnail?id=1XuFtm27m4UNLUYDjMao0_rxFZAjFBFtA&sz=w2000"
+        style="width:100%;height:230px;object-fit:cover;">
+
+        <p style="padding:15px;">
+          Professional visual identity design.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================= -->
+  <!-- CREATIVE VIDEO EDITING -->
+  <!-- ========================= -->
+
+  <h2 class="section-title" style="margin-top:90px;">
+    Custom Creative Video Editing
+  </h2>
+
+  <div class="grid">
+
+    <div class="portfolio-item">
+
+      <iframe
+        src="https://drive.google.com/file/d/1SFCY4NY-6G5l9VEs_E0jSG2A2RmkB8Yo/preview"
+        allowfullscreen
+        style="width:100%; height:230px; border:none;">
+      </iframe>
+
+      <div style="padding:15px;">
+
+        <h3 style="color:#ffd700; margin-bottom:10px;">
+          Your Video — Edited Your Way
+        </h3>
+
+        <p style="color:#ccc; font-size:14px; line-height:1.7;">
+          Get your own videos edited professionally in cinematic,
+          documentary, reels, shorts, advertisement, or storytelling style.
+        </p>
+
+        <ul style="
+          color:#aaa;
+          font-size:13px;
+          margin-top:15px;
+          padding-left:18px;
+          line-height:1.8;
+        ">
+          <li>🎬 Cinematic video editing</li>
+          <li>📱 Instagram reels & shorts</li>
+          <li>🎥 YouTube content editing</li>
+          <li>🎨 Color grading & effects</li>
+          <li>⚡ Fast delivery & professional quality</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- AUTO SLIDE RESEARCH BASED PDFS -->
+<h2 class="section-title" style="margin-top:80px;">
+  Research Based PDFs
+</h2>
+
+<style>
+.research-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.research-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  animation: researchScroll 40s linear infinite;
+}
+
+.research-track:hover {
+  animation-play-state: paused;
+}
+
+.research-card {
+  min-width: 340px;
+  height: 430px;
+  flex-shrink: 0;
+}
+
+@keyframes researchScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+<div class="research-slider">
+
+  <div class="research-track">
+
+    <!-- PDF 1 -->
+    <div class="pdf-card research-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1RP30QPzTzy4M-HenXXQGV99qolZvw9D1/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        NUMBER SERIES
+      </div>
+
+    </div>
+
+    <!-- PDF 2 -->
+    <div class="pdf-card research-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1MtGB_CYcBpq7UJ_-JXiW0z4-x3Oe3gKv/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        WORD ANALOGIES
+      </div>
+
+    </div>
+
+    <!-- PDF 3 -->
+    <div class="pdf-card research-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1hAgI9nusHvS6jDOD_fFqmPb3DxFYzP8T/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        LETTER SERIES AND ALPHABETIC PATTERNS
+      </div>
+
+    </div>
+
+    <!-- PDF 4 -->
+    <div class="pdf-card research-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/121J_LlC5R4hGzItOnpjkVrKVQwmO1Q1C/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        LOGICAL REASONING AND COMPARISON
+      </div>
+
+    </div>
+
+    <!-- PDF 5 -->
+    <div class="pdf-card research-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/12RuGNUJGGIGVmM1YWsX38P8uGscdWNjD/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        VERBAL ARITHMETIC RATES
+      </div>
+
+    </div>
+
+    <!-- DUPLICATES FOR SMOOTH LOOP -->
+
+    <div class="pdf-card research-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1RP30QPzTzy4M-HenXXQGV99qolZvw9D1/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        Research PDF Project 1
+      </div>
+
+    </div>
+
+    <div class="pdf-card research-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1MtGB_CYcBpq7UJ_-JXiW0z4-x3Oe3gKv/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        Research PDF Project 2
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- AUTO SLIDE CREATIVE WRITING POEMS -->
+<h2 class="section-title" style="margin-top:90px;">
+  Creative Writing Poems
+</h2>
+
+<style>
+.poem-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.poem-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  animation: poemScroll 35s linear infinite;
+}
+
+.poem-track:hover {
+  animation-play-state: paused;
+}
+
+.poem-card {
+  min-width: 340px;
+  height: 430px;
+  flex-shrink: 0;
+}
+
+@keyframes poemScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+<div class="poem-slider">
+
+  <div class="poem-track">
+
+    <!-- POEM 1 -->
+    <div class="pdf-card poem-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1bS9UWmaRC8NRCV9glvdNPIoxdkv1PadJ/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        Creative Writing & Poetry Collection 1
+      </div>
+
+    </div>
+
+    <!-- POEM 2 -->
+    <div class="pdf-card poem-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1IYkX-vghBIgT_LP1U2N2efvocbmJorMG/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        Creative Writing & Poetry Collection 2
+      </div>
+
+    </div>
+
+    <!-- POEM 3 -->
+    <div class="pdf-card poem-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1O-BW-p0BvBCuB0sCdXJnwMXb3u29pzDt/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        AT THE SEA SHORE
+      </div>
+
+    </div>
+
+    <!-- DUPLICATES FOR SMOOTH LOOP -->
+
+    <div class="pdf-card poem-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1bS9UWmaRC8NRCV9glvdNPIoxdkv1PadJ/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        IF BOTH ARE READY
+      </div>
+
+    </div>
+
+    <div class="pdf-card poem-card">
+
+      <iframe
+        src="https://drive.google.com/file/d/1IYkX-vghBIgT_LP1U2N2efvocbmJorMG/preview">
+      </iframe>
+
+      <div class="pdf-title">
+        THE DREAM
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+ 
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 VisualVerse Agency | Designed by Shazia Naz
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/923110864282" target="_blank"
+style="position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:9999;">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+<path d="M20.52 3.48A11.91 11.91 0 0 0 12.06 0C5.5 0 .17 5.33.17 11.89c0 2.09.55 4.14 1.6 5.94L0 24l6.34-1.66a11.87 11.87 0 0 0 5.72 1.46h.01c6.56 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.17-3.44-8.43Z"/>
+</svg>
+</a>
+
+<!-- SOCIAL MEDIA LINKS -->
+<section style="text-align:center; padding:80px 10%; background:#000;">
+
+  <h2 class="section-title">Connect With Me</h2>
+
+  <p style="color:#aaa; margin-bottom:30px;">
+    Follow VisualVerse Agency on all platforms
+  </p>
+
+  <div style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap;">
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@VisualVerseAgency" target="_blank"
+       style="width:70px;height:70px;background:#111;border:1px solid rgba(255,215,0,0.3);border-radius:50%;
+       display:flex;align-items:center;justify-content:center;text-decoration:none;transition:0.3s;"
+       onmouseover="this.style.transform='scale(1.1)'"
+       onmouseout="this.style.transform='scale(1)'">
+
+      <svg width="32" height="32" fill="#FF0000" viewBox="0 0 24 24">
+        <path d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C17.2 2.6 12 2.6 12 2.6h0s-5.2 0-8.6.3c-.5.1-1.4.1-2.1 1C.7 4.6.5 6.2.5 6.2S0 8.1 0 10v1.8c0 1.9.5 3.8.5 3.8s.2 1.6.8 2.3c.8.9 1.9.9 2.4 1 1.7.2 7.3.3 7.3.3s5.2 0 8.6-.3c.5-.1 1.4-.1 2.1-1 .6-.7.8-2.3.8-2.3s.5-1.9.5-3.8V10c0-1.9-.5-3.8-.5-3.8zM9.6 14.7V7.9l6.4 3.4-6.4 3.4z"/>
+      </svg>
+
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/visual_verse_agency/?hl=en" target="_blank"
+       style="width:70px;height:70px;background:#111;border:1px solid rgba(255,215,0,0.3);border-radius:50%;
+       display:flex;align-items:center;justify-content:center;text-decoration:none;transition:0.3s;"
+       onmouseover="this.style.transform='scale(1.1)'"
+       onmouseout="this.style.transform='scale(1)'">
+
+      <svg width="32" height="32" fill="#E1306C" viewBox="0 0 24 24">
+        <path d="M7.5 2C4.5 2 2 4.5 2 7.5v9C2 19.5 4.5 22 7.5 22h9c3 0 5.5-2.5 5.5-5.5v-9C22 4.5 19.5 2 16.5 2h-9zm9 2c1.9 0 3.5 1.6 3.5 3.5v9c0 1.9-1.6 3.5-3.5 3.5h-9C5.6 20 4 18.4 4 16.5v-9C4 5.6 5.6 4 7.5 4h9zm-4.5 3A4.5 4.5 0 1 0 12 16a4.5 4.5 0 0 0 0-9zm0 2A2.5 2.5 0 1 1 9.5 11.5 2.5 2.5 0 0 1 12 9zm4.8-.9a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
+      </svg>
+
+    </a>
+
+    <!-- Threads -->
+    <a href="https://www.threads.com/@visual_verse_agency?xmt=AQG0DZO8mFHtj3tVviSDooSM9lExBF1yQUmKSdmzIityNCw" target="_blank"
+       style="width:70px;height:70px;background:#111;border:1px solid rgba(255,215,0,0.3);border-radius:50%;
+       display:flex;align-items:center;justify-content:center;text-decoration:none;transition:0.3s;"
+       onmouseover="this.style.transform='scale(1.1)'"
+       onmouseout="this.style.transform='scale(1)'">
+
+      <svg width="32" height="32" fill="white" viewBox="0 0 24 24">
+        <path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm3.5-10c-.5-1.5-1.8-2.5-3.5-2.5-2.2 0-4 1.8-4 4s1.8 4 4 4c1.8 0 3.1-1 3.5-2.5h-2.1c-.3.6-1 1-1.9 1-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3c.9 0 1.6.4 1.9 1h2.1z"/>
+      </svg>
+
+    </a>
+
+  </div>
+
+  <p style="color:#555;margin-top:25px;font-size:13px;">
+    © 2026 VisualVerse Agency
+  </p>
+
+</section>
+
+</body>
+</html>
