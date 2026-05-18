@@ -905,116 +905,211 @@ footer {
 
 
 
+<!-- ========================= -->
+<!-- AUTO SCROLL THUMBNAILS -->
+<!-- ========================= -->
 
-  <!-- ========================= -->
-  <!-- AUTO SCROLL STYLES -->
-  <!-- ========================= -->
+<style>
 
-  <style>
+  .auto-scroll-wrapper{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    margin-top:50px;
+    padding:10px 0;
+  }
 
-    .auto-scroll-container{
-      overflow:hidden;
-      position:relative;
-      width:100%;
-      padding:10px 0;
+  .auto-scroll-wrapper::before,
+  .auto-scroll-wrapper::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:120px;
+    height:100%;
+    z-index:2;
+    pointer-events:none;
+  }
+
+  .auto-scroll-wrapper::before{
+    left:0;
+    background:linear-gradient(to right,#000,transparent);
+  }
+
+  .auto-scroll-wrapper::after{
+    right:0;
+    background:linear-gradient(to left,#000,transparent);
+  }
+
+  .auto-scroll-track{
+    display:flex;
+    gap:25px;
+    width:max-content;
+    animation:autoScroll 30s linear infinite;
+  }
+
+  .auto-scroll-track:hover{
+    animation-play-state:paused;
+  }
+
+  .thumb-card{
+    width:340px;
+    flex-shrink:0;
+    background:#111;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(0,0,0,0.45);
+    transition:0.4s ease;
+  }
+
+  .thumb-card:hover{
+    transform:translateY(-8px) scale(1.03);
+  }
+
+  .thumb-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
+  }
+
+  .thumb-card p{
+    padding:18px;
+    color:#ddd;
+    text-align:center;
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  @keyframes autoScroll{
+    from{
+      transform:translateX(0);
     }
 
-    .auto-scroll-track{
-      display:flex;
-      gap:25px;
-      width:max-content;
-      animation:scrollSlider 35s linear infinite;
+    to{
+      transform:translateX(-50%);
+    }
+  }
+
+  /* MOBILE */
+  @media(max-width:768px){
+
+    .thumb-card{
+      width:280px;
     }
 
-    .auto-scroll-track:hover{
-      animation-play-state:paused;
+    .thumb-card img{
+      height:190px;
     }
 
-    .scroll-card{
-      min-width:360px;
-      flex-shrink:0;
-    }
+  }
 
-    @keyframes scrollSlider{
-      from{
-        transform:translateX(0);
-      }
-
-      to{
-        transform:translateX(-50%);
-      }
-    }
-
-  </style>
+</style>
 
 
-  <!-- ========================= -->
-  <!-- THUMBNAIL PROJECTS -->
-  <!-- ========================= -->
+<!-- ========================= -->
+<!-- THUMBNAIL PROJECTS -->
+<!-- ========================= -->
 
-  <h2 class="section-title" style="margin-top:90px;">
-    Thumbnail Projects
-  </h2>
+<h2 class="section-title" style="margin-top:90px;">
+  Thumbnail Projects
+</h2>
 
-  <div class="auto-scroll-container">
+<div class="auto-scroll-wrapper">
 
-    <div class="auto-scroll-track">
+  <div class="auto-scroll-track">
 
-      <!-- THUMBNAIL 1 -->
-      <div class="portfolio-item scroll-card">
-        <img src="https://drive.google.com/thumbnail?id=1GDby3H3ngNuyS9aVco9Q1ZswJCL0LMbP&sz=w2000"
-        style="width:100%;height:230px;object-fit:cover;">
+    <!-- THUMBNAIL 1 -->
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1GDby3H3ngNuyS9aVco9Q1ZswJCL0LMbP&sz=w2000">
 
-        <p style="padding:15px;">
-          Cinematic YouTube thumbnail design project.
-        </p>
-      </div>
+      <p>
+        Cinematic YouTube thumbnail design project.
+      </p>
+    </div>
 
-      <!-- THUMBNAIL 2 -->
-      <div class="portfolio-item scroll-card">
-        <img src="https://drive.google.com/thumbnail?id=1VJ1HKi5f-O_Bje6oDZ6k0WPwCqvRUKJD&sz=w2000"
-        style="width:100%;height:230px;object-fit:cover;">
+    <!-- THUMBNAIL 2 -->
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1VJ1HKi5f-O_Bje6oDZ6k0WPwCqvRUKJD&sz=w2000">
 
-        <p style="padding:15px;">
-          Creative high-engagement thumbnail artwork.
-        </p>
-      </div>
+      <p>
+        Creative high-engagement thumbnail artwork.
+      </p>
+    </div>
 
-      <!-- THUMBNAIL 3 -->
-      <div class="portfolio-item scroll-card">
-        <img src="https://drive.google.com/thumbnail?id=1_D9kBZWak2btt0PVkAJI3vjyilUTfWgE&sz=w2000"
-        style="width:100%;height:230px;object-fit:cover;">
+    <!-- THUMBNAIL 3 -->
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1_D9kBZWak2btt0PVkAJI3vjyilUTfWgE&sz=w2000">
 
-        <p style="padding:15px;">
-          AI-enhanced cinematic thumbnail project.
-        </p>
-      </div>
+      <p>
+        AI-enhanced cinematic thumbnail project.
+      </p>
+    </div>
 
-      <!-- THUMBNAIL 4 -->
-      <div class="portfolio-item scroll-card">
-        <img src="https://drive.google.com/thumbnail?id=1tGSdLvCXXjxyBn3j4DwWMrajfToa1P82&sz=w2000"
-        style="width:100%;height:230px;object-fit:cover;">
+    <!-- THUMBNAIL 4 -->
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1tGSdLvCXXjxyBn3j4DwWMrajfToa1P82&sz=w2000">
 
-        <p style="padding:15px;">
-          Documentary-style thumbnail composition.
-        </p>
-      </div>
+      <p>
+        Documentary-style thumbnail composition.
+      </p>
+    </div>
 
-      <!-- THUMBNAIL 5 -->
-      <div class="portfolio-item scroll-card">
-        <img src="https://drive.google.com/thumbnail?id=1-woPHTkXxV-piMdjqbk6Cg2CqMOoBKaD&sz=w2000"
-        style="width:100%;height:230px;object-fit:cover;">
+    <!-- THUMBNAIL 5 -->
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1-woPHTkXxV-piMdjqbk6Cg2CqMOoBKaD&sz=w2000">
 
-        <p style="padding:15px;">
-          Viral-style thumbnail optimized for clicks.
-        </p>
-      </div>
+      <p>
+        Viral-style thumbnail optimized for clicks.
+      </p>
+    </div>
 
+    <!-- DUPLICATES FOR INFINITE SCROLL -->
+
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1GDby3H3ngNuyS9aVco9Q1ZswJCL0LMbP&sz=w2000">
+
+      <p>
+        Cinematic YouTube thumbnail design project.
+      </p>
+    </div>
+
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1VJ1HKi5f-O_Bje6oDZ6k0WPwCqvRUKJD&sz=w2000">
+
+      <p>
+        Creative high-engagement thumbnail artwork.
+      </p>
+    </div>
+
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1_D9kBZWak2btt0PVkAJI3vjyilUTfWgE&sz=w2000">
+
+      <p>
+        AI-enhanced cinematic thumbnail project.
+      </p>
+    </div>
+
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1tGSdLvCXXjxyBn3j4DwWMrajfToa1P82&sz=w2000">
+
+      <p>
+        Documentary-style thumbnail composition.
+      </p>
+    </div>
+
+    <div class="thumb-card">
+      <img src="https://drive.google.com/thumbnail?id=1-woPHTkXxV-piMdjqbk6Cg2CqMOoBKaD&sz=w2000">
+
+      <p>
+        Viral-style thumbnail optimized for clicks.
+      </p>
     </div>
 
   </div>
 
+</div>
 
+  
   <!-- ========================= -->
   <!-- LOGO PROJECTS -->
   <!-- ========================= -->
@@ -1386,7 +1481,7 @@ footer {
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/923110864282" target="_blank"
+<a href="https://wa.me/923088846208" target="_blank"
 style="position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:9999;">
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
 <path d="M20.52 3.48A11.91 11.91 0 0 0 12.06 0C5.5 0 .17 5.33.17 11.89c0 2.09.55 4.14 1.6 5.94L0 24l6.34-1.66a11.87 11.87 0 0 0 5.72 1.46h.01c6.56 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.17-3.44-8.43Z"/>
